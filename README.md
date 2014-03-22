@@ -1,4 +1,4 @@
 j8
 ==
 
-experiments with Java 8
+Experiments with Java 8, not impressed by the new features :-)
