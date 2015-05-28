@@ -69,10 +69,13 @@ public class Main {
 
         long tmp;
         long total = 0;
+        String contentType;
 
         for( Path p: files ) {
 
-            if( Files.probeContentType(p).startsWith("text/") ){
+            contentType = Files.probeContentType(p);
+
+            if( contentType != null && contentType.startsWith("text/") ){
 
                 tmp = Files.lines(p)
                            .filter( nonWhite )
